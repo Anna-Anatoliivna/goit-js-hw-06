@@ -7,9 +7,14 @@
     // console.log(value);
 // }
 
-const inputEl = document.querySelector('.js-user-name');
-const result = document.querySelector('h1:last-child');
-inputEl.addEventListener('blur', () => {
-    const inputEl = inputEl.value;
-});
-console.log('Hello', 'result');
+const inputEl = document.querySelector('input#name-input');
+const result = document.querySelector('span#name-output');
+inputEl.addEventListener('input', () => {
+    const value = inputEl.value;
+    console.log(value);
+    if (value = '') {
+        result = "Anonymous";
+    } else {
+        result = value.trim();
+    }
+    });
