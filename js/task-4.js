@@ -1,27 +1,26 @@
 const formEl = document.querySelector('.login-form');
+let inputArr = document.querySelectorAll('input');
+inputArr = Array.from(inputArr);
 formEl.addEventListener('submit', myForm);
-
-function myForm(evt) {
-    evt.preventDefault();
-    let isValid = false;
-    let inputArr = document.querySelectorAll('login-form input')
-    inputArr = Arr.from(inputArr);
-    inputArr.forEach(input => {
-        if (input.value) {
-            isValid = true;
-        } else {
-            isValid = false;
-        }        
-    });
-    if (!isValid) {
-        alert('All form fields must be filled in')
+function myForm(event) {
+  event.preventDefault();
+  let isValid = false;
+  // перевірка на ісвалід
+  inputArr.forEach(input => {
+    if (input.value) {
+      isValid = true;
+    } else {
+      isValid = false;
+      formEl.reset();
     }
-    let UserEmail = formEl.elements[0].value;
-    let UserPassword = formEl.elements[1].value;
-    let formObj = {
-        email: UserEmail,
-        password: UserPassword,
-    };
+  });
+  if (!isValid) {
+    alert('All form fields must be filled in');
+  } else {
+    let valueObj = { email: '', password: '' };
+    valueObj.email = inputArr[0].value;
+    valueObj.password = inputArr[1].value;
     formEl.reset();
-    return console.log(formObj);
+    return console.log(valueObj);
+  }
 }
