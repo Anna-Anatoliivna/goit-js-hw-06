@@ -30,6 +30,7 @@ body {
   max-width: 345px;
   height: 280px;
   padding: 100px 88px;
+  background-color: #fff;
 }
 .text {
   font-family: 'Montserat', sans-serif;
