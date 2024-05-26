@@ -1,4 +1,4 @@
-ul,
+/* ul,
 ol {
   margin-top: 0;
   margin-bottom: 0;
@@ -20,9 +20,9 @@ p {
 }
 button {
   cursor: pointer;
-}
+} */
 body {
-  font-family: 'Montserat', sans-serif;
+  /* font-family: 'Montserat', sans-serif; */
   background: #fff;
   font-weight: 400;
   font-size: 16px;
@@ -30,13 +30,33 @@ body {
   letter-spacing: 0.04em;
   color: #2e2f42;
 }
-.input {
+.form-box {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+  margin-bottom: 16px;
+}
+.boxes {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: auto;
+  background: #f6f6fe;
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.number-input {
   border: 1px solid #808080;
   border-radius: 8px;
-  padding: 8px 72px;
+  padding: 8px;
   width: 150px;
   height: 40px;
   outline: transparent;
+  text-align: center;
 }
 
 .create-btn {
