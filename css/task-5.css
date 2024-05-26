@@ -1,0 +1,62 @@
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+button {
+  cursor: pointer;
+}
+body {
+  font-family: 'Montserat', sans-serif;
+  background: #fff;
+  color: #2e2f42;
+}
+.widget {
+  max-width: 345px;
+  height: 280px;
+  padding: 100px 88px;
+}
+.text {
+  font-family: 'Montserat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  margin-bottom: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.change-color {
+  background: #4e75ff;
+  display: block;
+  min-width: 148px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  height: 40px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
