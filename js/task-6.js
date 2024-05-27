@@ -53,11 +53,12 @@ const destroyBtnEl = document.querySelector('[data-destroy]');
 const divEl = document.querySelector('.boxes');
 let boxWidth = 30;
 let boxHeight = 30;
- let numberUser = 0;
-inputEl.addEventListener("input", () => { 
-  numberUser = inputEl.value;
-  });
+let numberUser = 0;
+ // inputEl.addEventListener("input", () => { 
+//   numberUser = inputEl.value;
+//   });
 createBtnEl.addEventListener('click', () => {
+  numberUser = inputEl.value;
   if (numberUser > 100 || numberUser <= 0) {
     return;
   }
